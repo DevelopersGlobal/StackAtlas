@@ -12,8 +12,9 @@
 - Good balance between flexibility and developer experience
 
 **Caveats**
-- Model costs and latency need active monitoring
-- Retrieval quality depends on chunking and evaluation
+- Model costs can spike quickly with long conversations, so set token budgets and alert on usage early
+- Latency depends on model choice, prompt length, and retrieval calls; stream responses or cache common answers where possible
+- Retrieval quality depends on chunking, embedding refreshes, and evaluation against real user questions
 
 ## Notebook to App
 
